@@ -9,4 +9,5 @@ import { Product } from './product';
 })
 export class ProductsComponent {
   productList: ProductList = new ProductList();
+  // student :string = 'hello'; 
 }

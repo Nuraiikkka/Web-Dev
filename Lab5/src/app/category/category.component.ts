@@ -5,6 +5,8 @@ interface Category {
   name: string;
 }
 
+
+
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
@@ -16,5 +18,8 @@ export class CategoryComponent {
     { id: 2, name: 'Category 2' },
     { id: 3, name: 'Category 3' },
     { id: 4, name: 'Category 4' },
+
+    
   ];
+  
 }
