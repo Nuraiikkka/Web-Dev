@@ -1,0 +1,114 @@
+<!-- <header>
+  <h1>About Headhunter App</h1>
+</header>
+<main>
+  <p>Welcome to the Headhunter App, a platform designed to connect job seekers with employers!</p>
+  <p>Our mission is to simplify the job search process and help both job seekers and employers find the perfect match.</p>
+  <p>With our intuitive interface and powerful features, job seekers can search for jobs, apply with ease, and track their applications, while employers can post job listings, manage applicants, and find the right candidates for their positions.</p>
+  <p>Whether you're looking for your dream job or seeking talented individuals to join your team, Headhunter App has you covered!</p>
+</main>
+<footer>
+  <p>&copy; 2024 Headhunter App. All rights reserved.</p>
+</footer> -->
+
+
+<header>
+  <nav>
+    <div class="logo">hh</div>
+    <ul class="nav-links">
+      <li><a href="#">Алматы</a></li>
+      <li><a href="#">Соискателям</a></li>
+      <li><a href="#">Работодателям</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-outline">Создать резюме</button>
+      <button class="btn-primary">Войти</button>
+    </div>
+  </nav>
+</header>
+
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Найди работу мечты</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Профессия, должность или компания">
+      <button class="btn-primary">Найти</button>
+    </div>
+    <p><a href="#">Я ищу сотрудника</a></p>
+    <div class="stats">
+      <span>6 555 528 резюме</span>
+      <span>45 569 вакансий</span>
+      <span>125 331 компания</span>
+    </div>
+    <div class="app-links">
+      <a href="https://almaty.hh.kz/mobile?from=main_head&hhtmFromLabel=main_head&hhtmFrom=main" target="_blank">
+        <img src="/assets/appstore.png" alt="App Store">
+      </a>
+      <a href="https://almaty.hh.kz/mobile?from=main_head&hhtmFromLabel=main_head&hhtmFrom=main" target="_blank">
+        <img src="/assets/googleplay.png" alt="Google Play">
+      </a>
+      <a href="https://almaty.hh.kz/mobile?from=main_head&hhtmFromLabel=main_head&hhtmFrom=main" target="_blank">
+        <img src="/assets/appgallery.png" alt="App Gallery">
+      </a>
+    </div>    
+  </div>
+</section>
+
+
+<section class="categories">
+  <h2>Выберите категорию вакансий</h2>
+  <div class="category-grid">
+    <div class="category-card" *ngFor="let category of categories">
+      <h3>{{ category.title }}</h3>
+      <p>{{ category.salary }}</p>
+      <span>{{ category.count }} вакансий</span>
+    </div>
+  </div>
+</section>
+
+
+<section class="city-jobs">
+  <h2>Работа в Алматы</h2>
+  <div class="job-list">
+    <div *ngFor="let job of cityJobs">
+      <h4>{{ job.title }}</h4>
+      <p>{{ job.company }} - {{ job.salary }}</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="news-articles">
+  <div class="news">
+    <h3>Новости</h3>
+    <ul>
+      <li *ngFor="let item of news">{{ item }}</li>
+    </ul>
+  </div>
+  <div class="articles">
+    <h3>Статьи</h3>
+    <ul>
+      <li *ngFor="let article of articles">{{ article }}</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <div>
+      <h4>HeadHunter</h4>
+      <ul>
+        <li><a href="#">Помощь</a></li>
+        <li><a href="#">Наши вакансии</a></li>
+        <li><a href="#">Реклама на сайте</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Мобильное приложение</h4>
+      <img src="assets/qrcode.png" alt="QR Code">
+    </div>
+  </div>
+  <p>© 2025 TOO «HEADHUNTER.KZ»</p>
+</footer>
+
